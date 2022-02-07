@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Designer_Pattern.ExecutarTypesDesigner.Program</StartupObject>
+    <StartupObject>Designer_Pattern.Alura.Strategy.TesteImposto</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -49,51 +49,66 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>packages\xunit.abstractions.2.0.3\lib\net35\xunit.abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>packages\xunit.extensibility.core.2.4.1\lib\net452\xunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>packages\xunit.extensibility.execution.2.4.1\lib\net452\xunit.execution.desktop.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PadraoDeProjeto - Criacionais\DevMedia_Prototype\NotaCliente.cs" />
-    <Compile Include="PadraoDeProjeto - Criacionais\DevMedia_Prototype\Executar.cs" />
-    <Compile Include="PadraoDeProjeto - Criacionais\DevMedia_Prototype\Interface\INotaFiscal.cs" />
-    <Compile Include="PadraoDeProjeto - Criacionais\DevMedia_Prototype\Model\ModelPrototype.cs" />
-    <Compile Include="PadraoDeProjeto - Criacionais\DevMedia_Prototype\NotaFiscal.cs" />
-    <Compile Include="PadraoDeProjeto - Criacionais\DevMedia_Prototype\NotaDebito.cs" />
-    <Compile Include="PadraoDeProjeto - Criacionais\PluralSigth_Builder\Example2\CSharpConnerBuilder.cs" />
-    <Compile Include="PadraoDeProjeto - Criacionais\DevMedia_Singleton\SingleDevMedia.cs" />
-    <Compile Include="PadraoDeProjeto - Criacionais\DevMedia_Singleton\SingletonGenerics.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Adapter\Testes\PatternRendererShould.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Adapter\DesignerPattern_Adapter.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Adapter\Model\DataRender.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Adapter\Model\Pattern.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Adapter\Model\PatternRenderer.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Bridge\TypesFormatter\BackwardsFormatter.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Bridge\TypesFormatter\DifferentFormatter.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Bridge\TypesFormatter\FancyFormatter.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Bridge\Interfaces\IFormatter.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Bridge\Interfaces\IManuscript.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Bridge\Model\Book.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Bridge\Model\FAQ.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Bridge\Model\TermPaper.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Bridge\ExecutarProgram.cs" />
-    <Compile Include="PadraoDeProjeto - Estruturais\PluralSigth_Bridge\TypesFormatter\StandardFormatter.cs" />
-    <Compile Include="PadraoDeProjeto - Criacionais\PluralSigth_Builder\Example1\Repositorio\ClubSandwichBuilder.cs" />
-    <Compile Include="PadraoDeProjeto - Criacionais\PluralSigth_Builder\Example1\ExecutarProgram.cs" />
-    <Compile Include="PadraoDeProjeto - Criacionais\PluralSigth_Builder\Example1\Repositorio\MySandwichBuilder.cs" />
-    <Compile Include="PadraoDeProjeto - Criacionais\PluralSigth_Builder\Example1\Model\Sandwich.cs" />
-    <Compile Include="PadraoDeProjeto - Criacionais\PluralSigth_Builder\Example1\Abstract\SandwichBuilder.cs" />
-    <Compile Include="PadraoDeProjeto - Criacionais\PluralSigth_Builder\Example1\SandwichMaker.cs" />
+    <Compile Include="Alura\Strategy\CalculadorDeImpostos.cs" />
+    <Compile Include="Alura\Strategy\ICMS.cs" />
+    <Compile Include="Alura\Strategy\IImpostos.cs" />
+    <Compile Include="Alura\Strategy\ISS.cs" />
+    <Compile Include="Alura\Strategy\Orcamento.cs" />
+    <Compile Include="Alura\Strategy\TesteImposto.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\DevMedia_Prototype\NotaCliente.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\DevMedia_Prototype\Executar.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\DevMedia_Prototype\Interface\INotaFiscal.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\DevMedia_Prototype\Model\ModelPrototype.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\DevMedia_Prototype\NotaFiscal.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\DevMedia_Prototype\NotaDebito.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\PluralSigth_Builder\Example2\CSharpConnerBuilder.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\DevMedia_Singleton\SingleDevMedia.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\DevMedia_Singleton\SingletonGenerics.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Adapter\Testes\PatternRendererShould.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Adapter\DesignerPattern_Adapter.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Adapter\Model\DataRender.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Adapter\Model\Pattern.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Adapter\Model\PatternRenderer.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Bridge\TypesFormatter\BackwardsFormatter.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Bridge\TypesFormatter\DifferentFormatter.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Bridge\TypesFormatter\FancyFormatter.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Bridge\Interfaces\IFormatter.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Bridge\Interfaces\IManuscript.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Bridge\Model\Book.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Bridge\Model\FAQ.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Bridge\Model\TermPaper.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Bridge\ExecutarProgram.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Bridge\TypesFormatter\StandardFormatter.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\PluralSigth_Builder\Example1\Repositorio\ClubSandwichBuilder.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\PluralSigth_Builder\Example1\ExecutarProgram.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\PluralSigth_Builder\Example1\Repositorio\MySandwichBuilder.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\PluralSigth_Builder\Example1\Model\Sandwich.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\PluralSigth_Builder\Example1\Abstract\SandwichBuilder.cs" />
+    <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\PluralSigth_Builder\Example1\SandwichMaker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="PadraoDeProjeto - Estruturais\PluralSigth_Adapter\ArchivePDF\patterns-adapter-slides.pdf" />
-    <None Include="PadraoDeProjeto - Estruturais\PluralSigth_Bridge\ArchivePDF\design-patterns-bridge-slides.pdf" />
+    <None Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Adapter\ArchivePDF\patterns-adapter-slides.pdf" />
+    <None Include="PluralSight\PadraoDeProjeto - Estruturais\PluralSigth_Bridge\ArchivePDF\design-patterns-bridge-slides.pdf" />
     <None Include="packages.config" />
-    <None Include="PadraoDeProjeto - Comportamentais\PluralSigth_ChainOfResponsibility\ArchivePDF\pattern-chain-of-responsibility-slides.pdf" />
+    <None Include="PluralSight\PadraoDeProjeto - Comportamentais\PluralSigth_ChainOfResponsibility\ArchivePDF\pattern-chain-of-responsibility-slides.pdf" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="PadraoDeProjeto - Criacionais\DevMedia_Prototype\image003.png" />
-    <Content Include="PadraoDeProjeto - Criacionais\DevMedia_Prototype\Prototype.txt" />
+    <Content Include="PluralSight\PadraoDeProjeto - Criacionais\DevMedia_Prototype\image003.png" />
+    <Content Include="PluralSight\PadraoDeProjeto - Criacionais\DevMedia_Prototype\Prototype.txt" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
