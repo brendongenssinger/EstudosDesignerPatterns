@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Designer_Pattern.Alura.Strategy
+namespace Designer_Pattern.Alura
 {
     internal class CalculadorDeImpostos
     {

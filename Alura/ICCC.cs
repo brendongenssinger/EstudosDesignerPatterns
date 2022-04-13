@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Designer_Pattern.Alura.Strategy
+namespace Designer_Pattern.Alura
 {
     public class ICCC : IImpostos
     {

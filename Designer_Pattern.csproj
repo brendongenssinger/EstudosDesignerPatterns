@@ -60,14 +60,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alura\Strategy\CalculadorDeImpostos.cs" />
-    <Compile Include="Alura\Strategy\ICCC.cs" />
-    <Compile Include="Alura\Strategy\ICMS.cs" />
-    <Compile Include="Alura\Strategy\IImpostos.cs" />
-    <Compile Include="Alura\Strategy\ISS.cs" />
-    <Compile Include="Alura\Strategy\Orcamento.cs" />
-    <Compile Include="Alura\Strategy\RealizadorDeInvestimentos.cs" />
-    <Compile Include="Alura\Strategy\TesteImposto.cs" />
+    <Compile Include="Alura\CalculadorDeImpostos.cs" />
+    <Compile Include="Alura\ICCC.cs" />
+    <Compile Include="Alura\ICMS.cs" />
+    <Compile Include="Alura\IImpostos.cs" />
+    <Compile Include="Alura\ISS.cs" />
+    <Compile Include="Alura\Orcamento.cs" />
+    <Compile Include="Alura\RealizadorDeInvestimentos.cs" />
+    <Compile Include="Alura\TesteImposto.cs" />
     <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\DevMedia_Prototype\NotaCliente.cs" />
     <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\DevMedia_Prototype\Executar.cs" />
     <Compile Include="PluralSight\PadraoDeProjeto - Criacionais\DevMedia_Prototype\Interface\INotaFiscal.cs" />

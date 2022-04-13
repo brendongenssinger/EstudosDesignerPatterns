@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Designer_Pattern.Alura.Strategy
+namespace Designer_Pattern.Alura
 {
     internal class TesteImposto
     {
@@ -21,6 +21,7 @@ namespace Designer_Pattern.Alura.Strategy
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Calculo de Investimento");
+
             var realizadorDeInvestimento = new RealizadorDeInvestimentos();
             realizadorDeInvestimento.CalculoInvestimento(new ContaCorrente(500), TipoInvestimento.CONSERVADOR);
             realizadorDeInvestimento.CalculoInvestimento(new ContaCorrente(500), TipoInvestimento.MODERADO);

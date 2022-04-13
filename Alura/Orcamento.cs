@@ -1,6 +1,6 @@
 ﻿
 
-namespace Designer_Pattern.Alura.Strategy
+namespace Designer_Pattern.Alura
 {
     public class Orcamento
     {
