@@ -1,0 +1,6 @@
+ obj\
+.vs\
+.vs/Designer_Pattern/v17
+obj
+.vs/Designer_Pattern/v17/*
+.vs/Designer_Pattern/project-colors.json
