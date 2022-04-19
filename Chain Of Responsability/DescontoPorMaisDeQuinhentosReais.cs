@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Designer_Pattern
 {
-    public class DescontoPorMaisDeQuinhentosReais : IDesconto
+    public class DescontoPorMaisDeQuinhentosReais : Desconto
     {
-        public IDesconto Proximo => new SemDesconto();
-        public double Desconta(Orcamento orcamento)
+        public override IDesconto Proximo => new SemDesconto();
+        public override double Desconta(Orcamento orcamento)
         {
             if(orcamento.Valor > 500)
             {
