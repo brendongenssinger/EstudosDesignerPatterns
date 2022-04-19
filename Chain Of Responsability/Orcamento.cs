@@ -5,6 +5,11 @@ namespace Designer_Pattern
     public class Orcamento
     {
         public int Valor { get; internal set; }
-        public List<object> Itens { get; set; }
+        public List<Item> Itens { get; set; }
+    }
+
+    public class Item
+    {
+        public string Nome { get; set; }
     }
 }

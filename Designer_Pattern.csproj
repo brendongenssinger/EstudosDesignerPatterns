@@ -64,6 +64,7 @@
     <Compile Include="Chain Of Responsability\DescontoPorMaisDeQuinhentosReais.cs" />
     <Compile Include="Chain Of Responsability\DescontoPorCincoItens.cs" />
     <Compile Include="Chain Of Responsability\CalculadorDeDescontos.cs" />
+    <Compile Include="Chain Of Responsability\DescontoPorVendaCasada.cs" />
     <Compile Include="Chain Of Responsability\IDesconto.cs" />
     <Compile Include="Chain Of Responsability\Orcamento.cs" />
     <Compile Include="Chain Of Responsability\Program.cs" />

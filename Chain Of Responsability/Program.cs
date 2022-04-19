@@ -14,7 +14,7 @@ namespace Designer_Pattern.ExecutarTypesDesigner
         public static void Main(string[] args)
         {
             Console.WriteLine("iniciando ChainOfResponsability.");
-            var orcamento = new Orcamento() { Valor = 350, Itens = new List<object>(5) { } };
+            var orcamento = new Orcamento() { Valor = 350, Itens = new List<Item>(5) { } };
             new CalculadorDeDescontos().Calcula(orcamento);
             Console.WriteLine();
         }
